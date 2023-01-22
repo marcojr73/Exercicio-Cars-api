@@ -1,5 +1,12 @@
 package com.cars.api.dto;
 
-public record CarsDTO (String modelo, String fabricante, String dataFabricacao, Double valor, Integer anoModelo) {
+import jakarta.validation.constraints.NotNull;
+
+public record CarsDTO(
+        @NotNull String modelo,
+        @NotNull String fabricante,
+        @NotNull String dataFabricacao,
+        @NotNull Double valor,
+        @NotNull Integer anoModelo) {
 
 }

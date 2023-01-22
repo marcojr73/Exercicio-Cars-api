@@ -8,6 +8,7 @@ public class ApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
+		System.out.println("server is up and listening on port 8080");
 	}
 	
 
